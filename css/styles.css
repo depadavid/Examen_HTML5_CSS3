@@ -107,3 +107,21 @@ header a:hover {
     ". item09 item10 item11 item12 "
     ". item13 item14 item15 .";
 }
+::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+  background-color: var(--color-gris);
+}
+::-webkit-scrollbar-track {
+  border: 1px solid var(--color-gris);
+  background-color: var(--color-gris);
+}
+::-webkit-scrollbar-thumb {
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-gris);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-grisa);
+  border-radius: 5px;
+}
