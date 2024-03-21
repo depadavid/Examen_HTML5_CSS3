@@ -1,1 +1,94 @@
-@import url(./variables.css);
+@import url(variables.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-negro);
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: var(--color-blanco);
+  display: grid;
+  grid-template-columns: 0.8fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner contenido";
+}
+main {
+  grid-area: contenido;
+}
+header {
+  box-shadow: 0 0 10px var(--color-gris);
+  padding: 3em;
+  height: 100vh;
+  grid-area: banner;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-template-areas:
+    "titulo"
+    "categorias"
+    "carritos"
+    "copy";
+  align-items: center;
+  
+}
+header .icono {
+  display: none;
+}
+header .titulo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  grid-area: titulo;
+}
+header h1 {
+  color: var(--color-gris);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header .titulo i {
+  font-size: 3em;
+}
+header .categorias {
+  font-size: 1.3em;
+  grid-area: categorias;
+  line-height: 2.6em;
+}
+header .categorias .home {
+  padding: 5% 0;
+}
+header .categorias i {
+  margin-right: 0.7em;
+  font-size: 1.3em;
+  color: var(--color-gris);
+}
+header .categorias img {
+  margin-right: 1em;
+  width: 1.3em;
+  height: 1.3em;
+}
+header .carritos {
+  grid-area: carritos;
+  font-size: 1.3em;
+}
+header .carritos i {
+  margin-right: 0.7em;
+  font-size: 1.5em;
+  color: var(--color-gris);
+}
+header .carritos button {
+  outline: solid 0.5px var(--color-gris);
+  border: none;
+  margin-left: 2em;
+  background-color: var(--color-blanco);
+  width: 3em;
+  height: 2em;
+}
+header .copy {
+  grid-area: copy;
+}
+header a:hover {
+  cursor: pointer;
+  color: var(--color-gris);
+  text-shadow: 0 0 10px var(--color-grisa);
+}
