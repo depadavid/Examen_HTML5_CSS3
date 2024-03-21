@@ -18,7 +18,7 @@ main {
   grid-area: contenido;
 }
 header {
-  box-shadow: 0 0 10px var(--color-gris);
+  box-shadow: 0 0 10px var(--color-blanco);
   padding: 3em;
   height: 100vh;
   grid-area: banner;
@@ -31,7 +31,6 @@ header {
     "carritos"
     "copy";
   align-items: center;
-  
 }
 header .icono {
   display: none;
@@ -91,4 +90,20 @@ header a:hover {
   cursor: pointer;
   color: var(--color-gris);
   text-shadow: 0 0 10px var(--color-grisa);
+}
+.main {
+  box-shadow: 0 0 8px var(--color-gris);
+  overflow-y: scroll;
+  margin: auto;
+  width: 70vw;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 0.1fr repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    ". . . . . "
+    ". item01 item02 item03 item04 "
+    ". item05 item06 item07 item08 "
+    ". item09 item10 item11 item12 "
+    ". item13 item14 item15 .";
 }
