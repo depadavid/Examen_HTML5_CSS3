@@ -154,6 +154,7 @@ header a:hover {
   width: 100%;
   background-color: var(--color-azulgrisaseo);
   color: var(--color-negro);
+  text-align: center;
 }
 .main .container div {
   border-bottom-left-radius: 1em;
