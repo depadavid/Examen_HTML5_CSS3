@@ -180,3 +180,54 @@ header a:hover {
   cursor: pointer;
   color: var(--color-grisa);
 }
+.item01 {
+  grid-area: item01;
+}
+.item02 {
+  grid-area: item02;
+}
+.item03 {
+  grid-area: item03;
+}
+.item04 {
+  grid-area: item04;
+}
+.item05 {
+  grid-area: item05;
+}
+.item06 {
+  grid-area: item06;
+}
+.item07 {
+  grid-area: item07;
+}
+.item08 {
+  grid-area: item08;
+}
+.item09 {
+  grid-area: item09;
+}
+.item10 {
+  grid-area: item10;
+}
+.item11 {
+  grid-area: item11;
+}
+.item12 {
+  grid-area: item12;
+}
+.item13 {
+  grid-area: item13;
+}
+.item14 {
+  grid-area: item14;
+}
+.item15 {
+  grid-area: item15;
+}
+.main img {
+  z-index: -10;
+  width: 100%;
+  height: 23em;
+  margin: 50px 0;
+}
